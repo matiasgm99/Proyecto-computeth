@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Slab&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width:1920px) {
+    #body{
+    background-color: dimgray;
+	font-family: 'Nunito', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Slab', serif;
+    } 
+}
+/*seccion de menu de inicio*/
+#titulo{
+    color: yellow;
+	font-size: 300%;
+	background-color: black;
+    display: inline-block;
+}
+ .menu{
+    display: flex;
+    justify-content: center;
+}
+.menu li{
+    display: flex;
+    display: inline-block;
+    justify-content: space-around;
+    padding: 1rem;
+    color: black;
+    background-color: chartreuse;
+}
+/*CONTENIDO DEL MEDIO*/
+.novedad{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    color: rgb(161, 14, 161);
+    font-size: 2rem;
+}    
+.contenido{
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+.intel{
+    display: flex;
+    color: rgb(0, 0, 0);
+    background-color: aqua;
+}
+.ryzen{
+    display: flex;
+    color:black;
+    background-color: rgb(255, 115, 0);
+
+}
+.banner{
+    display: flex;
+    max-width: 35%;
+}
+/*SECCION DE PRODUCTOS DESTACADOS*/
+.TituloDestacado{
+    font-size: 2rem;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid;
+    display: inline-block;
+    color: rgb(161, 14, 161);
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows:  repeat(5, 20%);
+    gap: 10px;
+    margin: 10px;
+}
+.productoDest{
+    display: grid;
+    max-width: 10rem;
+    border-radius: 10px;
+}
+.footer {
+	color: yellow;
+	background-color:black ;
+	text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    #body{
+        background-color: dimgray;
+        font-family: 'Nunito', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Slab', serif;
+        } 
+    
+    /*seccion de menu de inicio*/
+    #titulo{
+        color: yellow;
+        font-size: 200%;
+        background-color: black;
+        display: inline-block;
+    }
+     .menu{
+        display: flex;
+        justify-content: center;
+    }
+    .menu li{
+        display: flex;
+        display: inline-block;
+        justify-content: space-around;
+        padding: 1rem;
+        color: black;
+        background-color: chartreuse;
+    }
+    /*CONTENIDO DEL MEDIO*/
+    .novedad{
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        color: rgb(161, 14, 161);
+        font-size: 2rem;
+    }    
+    .contenido{
+        display: inline-block;
+        font-size: 15px;
+        padding: 2rem;   
+     }
+    .intel{
+        display: flex;
+        color: rgb(0, 0, 0);
+         background-color: aqua;  
+    }
+    .ryzen{
+        display: flex;
+        color:black;    
+        background-color: rgb(255, 115, 0);
+    }
+    .banner{
+        max-width: 100%;
+    }
+    /*SECCION DE PRODUCTOS DESTACADOS*/
+    .TituloDestacado{
+        font-size: 2rem;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid;
+        display: inline-block;
+        color: rgb(161, 14, 161);
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        margin: 5px;
+    }
+    .productoDest{
+        max-width: 7rem;
+        border-radius: 10px;
+    }
+    .footer {
+        color: yellow;
+        background-color:black ;
+        text-align: center;
+    }
+}
