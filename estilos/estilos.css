@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Slab&family=Roboto:wght@300&display=swap');
+@import 'animate.css';
 
 *{
     margin: 0;
@@ -22,8 +23,9 @@
  .menu{
     display: flex;
     justify-content: center;
+    
 }
-.menu li{
+.menu li , a:hover{
     display: flex;
     display: inline-block;
     justify-content: space-around;
@@ -38,6 +40,7 @@
     margin-top: 4rem;
     color: rgb(161, 14, 161);
     font-size: 2rem;
+    background-image: linear-gradient(orange,aqua);
 }    
 .contenido{
     display: flex;
@@ -85,7 +88,11 @@
 	color: yellow;
 	background-color:black ;
 	text-align: center;
+    transform: scale(1,2);
 }
+
+
+
 
 @media screen and (max-width:768px) {
     #body{
@@ -121,6 +128,7 @@
         margin-top: 4rem;
         color: rgb(161, 14, 161);
         font-size: 2rem;
+        background-image: linear-gradient(orange,aqua);
     }    
     .contenido{
         display: inline-block;
